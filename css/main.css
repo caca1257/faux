@@ -173,10 +173,11 @@ header {
   margin-left: 50%;
   font-size: 1.3em;
 }
-#price p #last {
-  margin-bottom: 150px;
-}
 
+#career {
+  margin-top: 250px;
+  margin-bottom: 350px;
+}
 #career h2 {
   text-align: center;
   font-size: 4em;
@@ -191,10 +192,14 @@ header {
 }
 
 #contact {
-  text-align: center;
+  margin-bottom: 150px;
 }
 #contact h2 {
   font-size: 4em;
+  margin-left: 50%;
+}
+#contact h3 {
+  font-size: 2em;
   margin-left: 50%;
 }
 #contact p {
