@@ -33,7 +33,7 @@ ul{
 header{
 	margin-top:230px;
 	margin-bottom:240px;
-	margin-left:150px;
+	text-align: center;
 	font-size: 7em;
 	color: $textcolor;
 	font-family: 'Cantarell', sans-serif;
@@ -44,38 +44,48 @@ header{
 	color: $maincolor;
 }
 #about{
-	text-align: center;
+	//text-align: center;
 
 
 	h2{
 		font-size: 4em;
 		margin-left:50%;
 		margin-top: 150px;
+		text-align:center;
 
 	}//h2
 	p{
 		margin-left:50%;
+		//text-align: center;
+		line-height: 2em;
 
 		}//p
 
 }//#about
 
 #price{
-	text-align: center;
-
+	margin-top: 250px;
+	margin-bottom: 350px;
+	
 
 	h2{
+		text-align: center;
 		font-size: 4em;
 		margin-left:50%;
 
 	}//h2
 
 	h3{
-		
+		font-size: 2em;
+		//text-align: center;
+		margin-left:50%;
+
 	}//h3
 
 	p{
 		margin-left:50%;
+		font-size: 1.3em;
+		//text-align: center;
 
 		#last{
 			margin-bottom: 150px;
@@ -86,16 +96,19 @@ header{
 }//#about
 
 #career{
-	text-align: center;
+	
 
 
 	h2{
+		text-align: center;
 		font-size: 4em;
 		margin-left:50%;
 
 	}//h2
 
 	h3{
+		font-size: 2em;
+		margin-left:50%;
 		
 	}//h3
 
@@ -148,18 +161,19 @@ header{
 	body{
 		background: $large-bg;
 	}//body
-	header{
-		@include container;
-	}
+	
 
 }//large breakpoint
 @include susy-breakpoint($medium) {
 	body {
 		background: $medium-bg;
 	}//body
-		main{
+		#main,header{
 			@include span(6);
 		}//main
+		header{
+			font-size: 5.1em;
+		}
 
 	
 }//medium breakpoint
@@ -167,8 +181,11 @@ header{
 	body {
 		background: $small-bg;
 	}//body
-	main{
+	#main, header{
 		@include span(12);
 	}//main
+	header{
+		font-size: 2.5em;
+	}
 
 }//small breakpoint

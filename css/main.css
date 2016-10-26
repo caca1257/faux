@@ -134,7 +134,7 @@ ul li a a:hover {
 header {
   margin-top: 230px;
   margin-bottom: 240px;
-  margin-left: 150px;
+  text-align: center;
   font-size: 7em;
   color: #333333;
   font-family: 'Cantarell', sans-serif;
@@ -145,37 +145,45 @@ header {
   color: white;
 }
 
-#about {
-  text-align: center;
-}
 #about h2 {
   font-size: 4em;
   margin-left: 50%;
   margin-top: 150px;
+  text-align: center;
 }
 #about p {
   margin-left: 50%;
+  line-height: 2em;
 }
 
 #price {
-  text-align: center;
+  margin-top: 250px;
+  margin-bottom: 350px;
 }
 #price h2 {
+  text-align: center;
   font-size: 4em;
+  margin-left: 50%;
+}
+#price h3 {
+  font-size: 2em;
   margin-left: 50%;
 }
 #price p {
   margin-left: 50%;
+  font-size: 1.3em;
 }
 #price p #last {
   margin-bottom: 150px;
 }
 
-#career {
-  text-align: center;
-}
 #career h2 {
+  text-align: center;
   font-size: 4em;
+  margin-left: 50%;
+}
+#career h3 {
+  font-size: 2em;
   margin-left: 50%;
 }
 #career p {
@@ -199,31 +207,24 @@ header {
   margin-right: 1.69492%;
 }
 
-@media (min-width: 769px) and (max-width: 960px) {
+@media (min-width: 1025px) and (max-width: 1600px) {
   body {
     background: black;
   }
-
-  header {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  header:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   body {
     background: #565a5c;
   }
 
-  main {
+  #main, header {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
+  }
+
+  header {
+    font-size: 5.1em;
   }
 }
 @media (min-width: 1px) and (max-width: 480px) {
@@ -231,11 +232,15 @@ header {
     background: #cfb87c;
   }
 
-  main {
+  #main, header {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  header {
+    font-size: 2.5em;
   }
 }
 /*
