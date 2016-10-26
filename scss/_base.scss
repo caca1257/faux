@@ -18,10 +18,49 @@ ul{
 		a{
 			text-decoration: none;
 			display: block;
-		    color: white;
+		    color: $maincolor;
 		    text-align: center;
 		    padding: 14px 16px; 
 		}//a
 	}//li
 }//ul
 
+header{
+	margin-top:230px;
+	margin-bottom:240px;
+	margin-left:150px;
+	font-size: 7em;
+	color: $textcolor;
+	font-family: 'Cantarell', sans-serif;
+	text-transform: uppercase;
+}
+
+#main{
+	color: $maincolor;
+	
+	@include span(8);
+}
+
+@include susy-breakpoint($large) {
+	body{
+		background: $large-bg;
+	}//body
+
+}//large breakpoint
+@include susy-breakpoint($medium) {
+	body,header {
+		background: $medium-bg;
+	}//body
+		main{
+			@include span(6);
+		}//main
+	
+}//medium breakpoint
+@include susy-breakpoint($small) {
+	body,header {
+		background: $small-bg;
+	}//body
+	main{
+		@include span(12);
+	}//main
+}//small breakpoint

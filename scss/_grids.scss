@@ -1,0 +1,14 @@
+$susy:(
+	columns: 12,
+	gutters:1/4,
+	);
+@include border-box-sizing;
+
+.main{
+	@include container;
+	width: 960px;
+}
+
+$small: 1px 480px;
+$medium: 481px 768px;
+$large: 769px 960px;
