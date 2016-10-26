@@ -1,0 +1,36 @@
+@mixin smallbox(){
+	h2{
+	font-size: 2.4em;
+	margin-left: 0%;
+	}
+	h3{
+		font-size: 1.5em;
+		margin-left: 15px;
+	}
+	p{
+		margin-left: 20px;
+		margin-right: 10px;
+		color:$textcolor;
+	}
+}
+
+@mixin medbox(){
+	h2{
+		font-size:2.5em;
+	}
+	p{
+		margin-left: 10%;
+	}
+}
+@mixin medbox2{
+	h2{
+		font-size:2.5em;
+	}
+	h3{
+		font-size: 2em;
+		margin-left:25%;
+	}
+	p{
+		margin-left: 30%;
+	}
+}

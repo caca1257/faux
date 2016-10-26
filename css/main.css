@@ -128,7 +128,7 @@ ul li a {
   cursor: pointer;
 }
 ul li a a:hover {
-  color: red;
+  color: #c5cae9;
 }
 
 header {
@@ -147,12 +147,12 @@ header {
 
 #about h2 {
   font-size: 4em;
-  margin-left: 50%;
   margin-top: 150px;
   text-align: center;
 }
 #about p {
-  margin-left: 50%;
+  margin-left: 70px;
+  margin-right: 40px;
   line-height: 2em;
 }
 
@@ -163,14 +163,13 @@ header {
 #price h2 {
   text-align: center;
   font-size: 4em;
-  margin-left: 50%;
 }
 #price h3 {
   font-size: 2em;
-  margin-left: 50%;
+  margin-left: 35%;
 }
 #price p {
-  margin-left: 50%;
+  margin-left: 40%;
   font-size: 1.3em;
 }
 
@@ -181,14 +180,15 @@ header {
 #career h2 {
   text-align: center;
   font-size: 4em;
-  margin-left: 50%;
 }
 #career h3 {
   font-size: 2em;
-  margin-left: 50%;
+  margin-left: 30%;
 }
 #career p {
-  margin-left: 50%;
+  margin-left: 30%;
+  margin-right: 30%;
+  line-height: 2em;
 }
 
 #contact {
@@ -196,20 +196,21 @@ header {
 }
 #contact h2 {
   font-size: 4em;
-  margin-left: 50%;
+  text-align: center;
 }
 #contact h3 {
   font-size: 2em;
-  margin-left: 50%;
+  margin-left: 35%;
 }
 #contact p {
-  margin-left: 50%;
+  margin-left: 40%;
 }
 
 #main {
-  width: 66.10169%;
+  width: 100%;
   float: left;
-  margin-right: 1.69492%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 @media (min-width: 1025px) and (max-width: 1600px) {
@@ -223,13 +224,46 @@ header {
   }
 
   #main, header {
-    width: 49.15254%;
+    width: 100%;
     float: left;
-    margin-right: 1.69492%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   header {
     font-size: 5.1em;
+  }
+
+  #about h2 {
+    font-size: 2.5em;
+  }
+  #about p {
+    margin-left: 10%;
+  }
+
+  #price h2 {
+    font-size: 2.5em;
+  }
+  #price h3 {
+    font-size: 2em;
+    margin-left: 25%;
+  }
+  #price p {
+    margin-left: 30%;
+  }
+  #price p {
+    color: #cfb87c;
+  }
+
+  #career h2 {
+    font-size: 2.5em;
+  }
+  #career h3 {
+    font-size: 2em;
+    margin-left: 25%;
+  }
+  #career p {
+    margin-left: 30%;
   }
 }
 @media (min-width: 1px) and (max-width: 480px) {
@@ -246,6 +280,62 @@ header {
 
   header {
     font-size: 2.5em;
+  }
+
+  #about h2 {
+    font-size: 2.4em;
+    margin-left: 0%;
+  }
+  #about h3 {
+    font-size: 1.5em;
+    margin-left: 15px;
+  }
+  #about p {
+    margin-left: 20px;
+    margin-right: 10px;
+    color: #333333;
+  }
+
+  #career h2 {
+    font-size: 2.4em;
+    margin-left: 0%;
+  }
+  #career h3 {
+    font-size: 1.5em;
+    margin-left: 15px;
+  }
+  #career p {
+    margin-left: 20px;
+    margin-right: 10px;
+    color: #333333;
+  }
+
+  #price h2 {
+    font-size: 2.4em;
+    margin-left: 0%;
+  }
+  #price h3 {
+    font-size: 1.5em;
+    margin-left: 15px;
+  }
+  #price p {
+    margin-left: 20px;
+    margin-right: 10px;
+    color: #333333;
+  }
+
+  #contact h2 {
+    font-size: 2.4em;
+    margin-left: 0%;
+  }
+  #contact h3 {
+    font-size: 1.5em;
+    margin-left: 15px;
+  }
+  #contact p {
+    margin-left: 20px;
+    margin-right: 10px;
+    color: #333333;
   }
 }
 /*
