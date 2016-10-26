@@ -20,7 +20,12 @@ ul{
 			display: block;
 		    color: $maincolor;
 		    text-align: center;
-		    padding: 14px 16px; 
+		    padding: 14px 16px;
+		    cursor: pointer; 
+
+			a:hover {
+    		color: red;//#c5cae9;
+    		}//a:hover
 		}//a
 	}//li
 }//ul
@@ -37,30 +42,133 @@ header{
 
 #main{
 	color: $maincolor;
+}
+#about{
+	text-align: center;
+
+
+	h2{
+		font-size: 4em;
+		margin-left:50%;
+		margin-top: 150px;
+
+	}//h2
+	p{
+		margin-left:50%;
+
+		}//p
+
+}//#about
+
+#price{
+	text-align: center;
+
+
+	h2{
+		font-size: 4em;
+		margin-left:50%;
+
+	}//h2
+
+	h3{
+		
+	}//h3
+
+	p{
+		margin-left:50%;
+
+		#last{
+			margin-bottom: 150px;
+		}
+
+		}//p
+
+}//#about
+
+#career{
+	text-align: center;
+
+
+	h2{
+		font-size: 4em;
+		margin-left:50%;
+
+	}//h2
+
+	h3{
+		
+	}//h3
+
+	p{
+		margin-left:50%;
+
+
+	}//p
+
+}//#about
+
+#contact{
+	text-align: center;
+
+
+	h2{
+		font-size: 4em;
+		margin-left:50%;
+
+	}//h2
+
+	h3{
+		
+	}//h3
+
+	p{
+		margin-left:50%;
+
+
+	}//p
+
+}//#about
+
+
+
+
+
+
+
+
+
+
+#main{
 	
 	@include span(8);
 }
+
 
 @include susy-breakpoint($large) {
 	body{
 		background: $large-bg;
 	}//body
+	header{
+		@include container;
+	}
 
 }//large breakpoint
 @include susy-breakpoint($medium) {
-	body,header {
+	body {
 		background: $medium-bg;
 	}//body
 		main{
 			@include span(6);
 		}//main
+
 	
 }//medium breakpoint
 @include susy-breakpoint($small) {
-	body,header {
+	body {
 		background: $small-bg;
 	}//body
 	main{
 		@include span(12);
 	}//main
+
 }//small breakpoint

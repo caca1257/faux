@@ -125,6 +125,10 @@ ul li a {
   color: white;
   text-align: center;
   padding: 14px 16px;
+  cursor: pointer;
+}
+ul li a a:hover {
+  color: red;
 }
 
 header {
@@ -139,6 +143,57 @@ header {
 
 #main {
   color: white;
+}
+
+#about {
+  text-align: center;
+}
+#about h2 {
+  font-size: 4em;
+  margin-left: 50%;
+  margin-top: 150px;
+}
+#about p {
+  margin-left: 50%;
+}
+
+#price {
+  text-align: center;
+}
+#price h2 {
+  font-size: 4em;
+  margin-left: 50%;
+}
+#price p {
+  margin-left: 50%;
+}
+#price p #last {
+  margin-bottom: 150px;
+}
+
+#career {
+  text-align: center;
+}
+#career h2 {
+  font-size: 4em;
+  margin-left: 50%;
+}
+#career p {
+  margin-left: 50%;
+}
+
+#contact {
+  text-align: center;
+}
+#contact h2 {
+  font-size: 4em;
+  margin-left: 50%;
+}
+#contact p {
+  margin-left: 50%;
+}
+
+#main {
   width: 66.10169%;
   float: left;
   margin-right: 1.69492%;
@@ -148,9 +203,20 @@ header {
   body {
     background: black;
   }
+
+  header {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  body, header {
+  body {
     background: #565a5c;
   }
 
@@ -161,7 +227,7 @@ header {
   }
 }
 @media (min-width: 1px) and (max-width: 480px) {
-  body, header {
+  body {
     background: #cfb87c;
   }
 
