@@ -106,7 +106,7 @@ body {
   margin: 0;
 }
 
-ul {
+nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -115,11 +115,11 @@ ul {
   top: 0;
   width: 100%;
 }
-ul li {
+nav li {
   list-style: none;
   display: inline-block;
 }
-ul li a {
+nav li a {
   text-decoration: none;
   display: block;
   color: white;
@@ -127,13 +127,17 @@ ul li a {
   padding: 14px 16px;
   cursor: pointer;
 }
-ul li a a:hover {
+nav li a a:hover {
   color: #c5cae9;
 }
 
+nav select {
+  display: none;
+}
+
 header {
-  margin-top: 230px;
-  margin-bottom: 240px;
+  margin-top: 350px;
+  margin-bottom: 650px;
   text-align: center;
   font-size: 7em;
   color: #333333;
@@ -147,18 +151,16 @@ header {
 
 #about h2 {
   font-size: 4em;
-  margin-top: 150px;
   text-align: center;
 }
 #about p {
-  margin-left: 70px;
-  margin-right: 40px;
+  margin-left: 25%;
+  margin-right: 10%;
   line-height: 2em;
 }
 
 #price {
-  margin-top: 250px;
-  margin-bottom: 350px;
+  margin-top: 600px;
 }
 #price h2 {
   text-align: center;
@@ -174,8 +176,7 @@ header {
 }
 
 #career {
-  margin-top: 250px;
-  margin-bottom: 350px;
+  margin-top: 600px;
 }
 #career h2 {
   text-align: center;
@@ -192,6 +193,7 @@ header {
 }
 
 #contact {
+  margin-top: 600px;
   margin-bottom: 150px;
 }
 #contact h2 {
@@ -206,6 +208,10 @@ header {
   margin-left: 40%;
 }
 
+footer {
+  font-size: .7em;
+}
+
 #main {
   width: 100%;
   float: left;
@@ -216,6 +222,10 @@ header {
 @media (min-width: 1025px) and (max-width: 1600px) {
   body {
     background: black;
+  }
+
+  #price p {
+    color: #cfb87c;
   }
 }
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -265,10 +275,33 @@ header {
   #career p {
     margin-left: 30%;
   }
+
+  #contact h2 {
+    font-size: 2.5em;
+  }
+  #contact h3 {
+    font-size: 2em;
+    margin-left: 25%;
+  }
+  #contact p {
+    margin-left: 30%;
+  }
 }
 @media (min-width: 1px) and (max-width: 480px) {
   body {
     background: #cfb87c;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav select {
+    display: inline-block;
+  }
+
+  .dropdown {
+    position: relative;
   }
 
   #main, header {

@@ -3,7 +3,7 @@ body{
 	margin:0;
 }// body
 
-ul{
+nav{
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -30,9 +30,13 @@ ul{
 	}//li
 }//ul
 
+nav select {
+  display: none;
+}
+
 header{
-	margin-top:230px;
-	margin-bottom:240px;
+	margin-top:350px;
+	margin-bottom:650px;
 	text-align: center;
 	font-size: 7em;
 	color: $textcolor;
@@ -50,13 +54,13 @@ header{
 	h2{
 		font-size: 4em;
 		//margin-left:50%;
-		margin-top: 150px;
+		//margin-top: 150px;
 		text-align:center;
 
 	}//h2
 	p{
-		margin-left:70px;
-		margin-right:40px;
+		margin-left:25%;
+		margin-right:10%;
 		//text-align: center;
 		line-height: 2em;
 
@@ -65,8 +69,8 @@ header{
 }//#about
 
 #price{
-	margin-top: 250px;
-	margin-bottom: 350px;
+	margin-top: 600px;
+	//margin-bottom: 350px;
 	
 
 	h2{
@@ -95,8 +99,8 @@ header{
 
 #career{
 	
-	margin-top: 250px;
-	margin-bottom: 350px;
+	margin-top: 600px;
+	//margin-bottom: 350px;
 
 	h2{
 		text-align: center;
@@ -122,6 +126,7 @@ header{
 }//#about
 
 #contact{
+	margin-top: 600px;
 	margin-bottom: 150px;
 
 
@@ -146,7 +151,9 @@ header{
 
 }//#about
 
-
+footer{
+	font-size: .7em;
+}
 
 
 
@@ -165,6 +172,11 @@ header{
 	body{
 		background: $large-bg;
 	}//body
+	#price{
+		p{
+			color:$small-bg;
+		}
+	}
 	
 
 }//large breakpoint
@@ -190,6 +202,9 @@ header{
 		#career{
 			@include medbox2();
 		}
+		#contact{
+			@include medbox2();
+		}
 
 	
 }//medium breakpoint
@@ -197,6 +212,12 @@ header{
 	body {
 		background: $small-bg;
 	}//body
+	nav ul     { display: none; }
+ 	nav select { display: inline-block; }
+
+	.dropdown{
+		position:relative
+	}
 	#main, header{
 		@include span(12);
 	}//main
@@ -215,6 +236,7 @@ header{
 	#contact{
 		@include smallbox();
 	}
+
 
 
 }//small breakpoint
