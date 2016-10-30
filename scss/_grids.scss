@@ -4,7 +4,7 @@ $susy:(
 	);
 @include border-box-sizing;
 
-.main{
+#main{
 	@include container;
 	width: 960px;
 }

@@ -23,7 +23,7 @@ nav{
 		    padding: 14px 16px;
 		    cursor: pointer; 
 
-			a:hover {
+			&:hover {
     		color:#c5cae9;
     		}//a:hover
 		}//a
@@ -35,8 +35,8 @@ nav select {
 }
 
 header{
-	margin-top:350px;
-	margin-bottom:650px;
+	margin-top:250px;
+	//margin-bottom:650px;
 	text-align: center;
 	font-size: 7em;
 	color: $textcolor;
@@ -54,7 +54,7 @@ header{
 	h2{
 		font-size: 4em;
 		//margin-left:50%;
-		//margin-top: 150px;
+		margin-top: 200px;
 		text-align:center;
 
 	}//h2
@@ -166,6 +166,11 @@ footer{
 	
 	@include span(12);
 }
+#price{
+	p{
+		color:$small-bg;
+	}
+}
 
 
 @include susy-breakpoint($large) {
@@ -188,7 +193,7 @@ footer{
 			@include span(12);
 		}//main
 		header{
-			font-size: 5.1em;
+			font-size: 4.6em;
 		}
 		#about{
 			@include medbox();
